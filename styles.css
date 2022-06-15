@@ -1,23 +1,69 @@
 body{
     height: 100vh;
     width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo-svg, .logo-text{
+    color: white;
+    font-size: 24px;
 }
 
 
+.sidebar-svg, .sidebar-text{
+    color: white;
+}
+
 .main-container{
     background-color: grey;
-    height: 100%;
+    min-height: 100%;
 
     display: grid;
 
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 225px 2fr;
     grid-template-rows: 1fr 5fr;
 }
 
 .sidebar{
-    background-color: lightskyblue;
-
+    background-color: #0ea5e9;
     grid-row: 1/-1; 
+    
+
+    display : grid;
+    grid-template-rows: 100px 1fr 1fr;
+    gap : 32px;
+}
+
+
+.sidebar-logo{
+
+    padding-left: 8px;
+    display: flex;
+    gap : 8px;
+    align-items: center;
+    
+}
+
+.sidebar-links,
+.sidebar-setting{
+    margin-left : 20px;
+}
+
+.sidebar-links-content{
+    display : grid;
+    grid-template-columns: 20px 1fr;
+    gap : 16px;
+    align-items: center;
+}
+
+.sidebar-setting-links{
+    display : grid;
+    grid-template-columns: 20px 1fr;
+    gap : 16px;
+    align-items: center;
 }
 
 
