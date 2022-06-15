@@ -117,9 +117,36 @@ img{
 
 .header-lower{
     border: 2px solid red;
+    
+}
+
+.header-lower-button{
+    background-color: #0ea5e9 ;
+    border-radius: 15px;
+    color: white;
+    padding : 5px 10px;
 }
 
 .content{
     background-color:#cbd5e1;
+
+    display : grid;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content-project{
+    border: 2px solid red;
+
+    grid-row: 1/-1;
+}
+
+.content-annoucements{
+    border: 2px solid blue;
+}
+
+.content-trending{
+    border : 2px solid green
 }
 
