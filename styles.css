@@ -191,15 +191,6 @@ img{
     margin-right: 16px;
 }
 
-.content-annoucements{
-    border: 2px solid blue;
-
-}
-
-.content-trending{
-    /* border : 2px solid green */
-}
-
 .card{
     background-color: white;
     height : 175px;
@@ -242,6 +233,33 @@ img{
     font-size: 18px;
 }
 
+.annoucement-card{
+
+    background-color: white; 
+    width: 85%;
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap : 8px;
+
+    border-radius : 5px;
+
+}
+
+.annoucement-section{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.annoucement-title{
+    margin-bottom: 2px;
+}
+
+.announcement-description{
+    margin-top: 0;
+}
+
 .trending-card{
     background-color: white; 
     width: 85%;
@@ -264,9 +282,13 @@ img{
 
 .trending-card-text{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;  
+    gap: 2px; 
 }
-
+.trend-title,
+.annoucement-title{
+    font-weight: 900;
+}
 .trend-title,
 .trend-intro{
     margin : 0;
