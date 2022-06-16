@@ -146,6 +146,10 @@ img{
     margin: 0;
 }
 
+.header-lower-name{
+    font-size: 24px;
+}
+
 .header-lower-button{
     background-color: #0ea5e9 ;
     border-radius: 15px;
@@ -189,10 +193,11 @@ img{
 
 .content-annoucements{
     border: 2px solid blue;
+
 }
 
 .content-trending{
-    border : 2px solid green
+    /* border : 2px solid green */
 }
 
 .card{
@@ -212,12 +217,14 @@ img{
     flex: 1;
     align-self: flex-start;
     padding-top: 0;
+
+    color: #44403c
 }
 .content-cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      /* grid-template-rows: repeat(2, 1fr); */
-    gap: 15px;
+    gap: 16px;
 }
 
 .card-links{
@@ -233,4 +240,34 @@ img{
 .content-title{
     font-weight: bold;
     font-size: 18px;
+}
+
+.trending-card{
+    background-color: white; 
+    width: 85%;
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap : 8px;
+
+    border-radius : 5px;
+}
+
+.trending-card-sections{
+    display: flex;
+    align-items: center;
+    gap : 8px;
+    margin : 8px;
+    padding-bottom: 4px;
+}
+
+.trending-card-text{
+    display: flex;
+    flex-direction: column;   
+}
+
+.trend-title,
+.trend-intro{
+    margin : 0;
 }
