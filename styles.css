@@ -179,9 +179,12 @@ img{
 }
 
 .content-project{
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     grid-row: 1/-1;
+
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .content-annoucements{
@@ -192,3 +195,42 @@ img{
     border : 2px solid green
 }
 
+.card{
+    background-color: white;
+    height : 175px;
+    padding : 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-left: 10px solid #fda4af;
+    border-radius: 2%;
+
+} 
+
+.card-text{
+    flex: 1;
+    align-self: flex-start;
+    padding-top: 0;
+}
+.content-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     /* grid-template-rows: repeat(2, 1fr); */
+    gap: 15px;
+}
+
+.card-links{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.card .title{
+    font-weight: bold;
+}
+
+.content-title{
+    font-weight: bold;
+    font-size: 18px;
+}
